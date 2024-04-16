@@ -9,13 +9,13 @@ pipeline {
         }
         stage('docker-build') {
             steps {
-               sh 'cd coit-backend1 && docker build -t amol1996/coit-backend-12343243 .'
+               sh 'cd coit-backend1 && docker build -t dhawalepallavi186/coit-backend1 .'
                sh 'docker images' 
             }
         }
         stage('docker-push') {
             steps {
-               sh 'docker push amol1996/coit-backend-12343243'
+               sh 'docker push dhawalepallavi186/coit-backend1'
             }
     }
 }
